@@ -1,0 +1,8 @@
+*.kicad_pcb-bak
+*.bak
+*-rescue.*
+_saved*.*
+/.idea
+fp-info-cache
+*-cache.lib
+_autosave*.*
