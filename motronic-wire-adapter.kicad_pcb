@@ -216,7 +216,7 @@
     (add_net N-000009)
   )
 
-  (module hw_55_te:55pin_china_bosch_motronic (layer F.Cu) (tedit 5E763381) (tstamp 54212F31)
+  (module rusEFI_Modules:55pin_china_bosch_motronic (layer F.Cu) (tedit 5E763381) (tstamp 54212F31)
     (at 220 168.5 180)
     (path /542111B3)
     (fp_text reference P1 (at 0 27.5) (layer F.SilkS) hide
