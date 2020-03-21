@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name ruseflibs)(type Legacy)(uri ${KIPRJMOD}/kicad-libraries/molex_48pin_MRE.lib)(options "")(descr ""))
+  (lib (name hw_55_te)(type Legacy)(uri ${KIPRJMOD}/hw_55_te.lib)(options "")(descr ""))
+)
