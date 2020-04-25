@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name rusEFI_Modules)(type KiCad)(uri ${KIPRJMOD}/kicad-libraries/rusefi_lib.pretty)(options "")(descr ""))
+  (lib (name hw_55_te)(type KiCad)(uri ${KIPRJMOD}/hw_55_te.pretty)(options "")(descr ""))
+)
