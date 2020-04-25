@@ -251,7 +251,7 @@ $Comp
 L Connector:TestPoint_2Pole W16
 U 1 1 5E904865
 P 1900 2250
-F 0 "W16" V 1900 2250 50  0000 C CNN
+F 0 "W16" H 1900 2250 50  0000 C CNN
 F 1 "TestPoint_2Pole" V 1945 2308 50  0001 L CNN
 F 2 "rusEFI_Modules:SM0805_jumper" H 1900 2250 50  0001 C CNN
 F 3 "~" H 1900 2250 50  0001 C CNN
@@ -375,12 +375,12 @@ $EndComp
 $Comp
 L Connector:TestPoint_2Pole W29
 U 1 1 5E94F8F4
-P 2500 3650
-F 0 "W29" V 2500 3650 50  0000 C CNN
-F 1 "TestPoint_2Pole" V 2545 3708 50  0001 L CNN
-F 2 "rusEFI_Modules:SM0805_jumper" H 2500 3650 50  0001 C CNN
-F 3 "~" H 2500 3650 50  0001 C CNN
-	1    2500 3650
+P 1950 3650
+F 0 "W29" V 1950 3650 50  0000 C CNN
+F 1 "TestPoint_2Pole" V 1995 3708 50  0001 L CNN
+F 2 "rusEFI_Modules:SM0805_jumper" H 1950 3650 50  0001 C CNN
+F 3 "~" H 1950 3650 50  0001 C CNN
+	1    1950 3650
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -586,7 +586,7 @@ Wire Wire Line
 Wire Wire Line
 	1600 3350 1750 3350
 Wire Wire Line
-	1600 3650 2300 3650
+	1600 3650 1750 3650
 Wire Wire Line
 	1600 3850 2350 3850
 Wire Wire Line
@@ -662,7 +662,7 @@ Wire Wire Line
 Wire Wire Line
 	2150 3350 2800 3350
 Wire Wire Line
-	2700 3650 2800 3650
+	2150 3650 2800 3650
 Wire Wire Line
 	2150 1050 2800 1050
 Text Label 14675 2550 2    50   ~ 0
@@ -904,7 +904,7 @@ $Comp
 L Connector:TestPoint_2Pole W15
 U 1 1 5E93568B
 P 2550 2150
-F 0 "W15" V 2550 2150 50  0000 C CNN
+F 0 "W15" H 2550 2150 50  0000 C CNN
 F 1 "TestPoint_2Pole" V 2595 2208 50  0001 L CNN
 F 2 "rusEFI_Modules:SM0805_jumper" H 2550 2150 50  0001 C CNN
 F 3 "~" H 2550 2150 50  0001 C CNN
@@ -1074,33 +1074,33 @@ $EndComp
 $Comp
 L Connector:TestPoint_2Pole W40A1
 U 1 1 5ECB2382
-P 3850 4475
-F 0 "W40A1" H 3850 4400 50  0000 C CNN
-F 1 "TestPoint_2Pole" V 3895 4533 50  0001 L CNN
-F 2 "rusEFI_Modules:SM0805_jumper" H 3850 4475 50  0001 C CNN
-F 3 "~" H 3850 4475 50  0001 C CNN
-	1    3850 4475
+P 3850 4550
+F 0 "W40A1" V 3850 4550 50  0000 C CNN
+F 1 "TestPoint_2Pole" V 3895 4608 50  0001 L CNN
+F 2 "rusEFI_Modules:SM0805_jumper" H 3850 4550 50  0001 C CNN
+F 3 "~" H 3850 4550 50  0001 C CNN
+	1    3850 4550
 	1    0    0    -1  
 $EndComp
 $Comp
 L Connector:TestPoint_2Pole W42A1
 U 1 1 5ECBF2B3
 P 4150 4650
-F 0 "W42A1" H 4150 4575 50  0000 C CNN
+F 0 "W42A1" V 4150 4650 50  0000 C CNN
 F 1 "TestPoint_2Pole" V 4195 4708 50  0001 L CNN
 F 2 "rusEFI_Modules:SM0805_jumper" H 4150 4650 50  0001 C CNN
 F 3 "~" H 4150 4650 50  0001 C CNN
 	1    4150 4650
 	1    0    0    -1  
 $EndComp
-Text Label 4400 4475 0    50   ~ 0
+Text Label 4400 4550 0    50   ~ 0
 CAN_H
 Text Label 4400 4650 0    50   ~ 0
 CAN_L
 Wire Wire Line
 	4350 4650 4400 4650
 Wire Wire Line
-	4050 4475 4400 4475
+	4050 4550 4400 4550
 Wire Wire Line
 	1600 4650 1700 4650
 Wire Wire Line
@@ -1113,19 +1113,19 @@ Connection ~ 3600 5050
 Wire Wire Line
 	3600 5050 3650 5050
 Wire Wire Line
-	3650 4475 3500 4475
+	3650 4550 3500 4550
 Wire Wire Line
-	3500 4475 3500 4850
+	3500 4550 3500 4850
 Connection ~ 3500 4850
 Wire Wire Line
 	3500 4850 3950 4850
-Text Notes 15625 3075 0    50   ~ 0
+Text Notes 15225 3200 0    50   ~ 0
 AIN/OD
-Text Notes 15625 2925 0    50   ~ 0
+Text Notes 15225 2850 0    50   ~ 0
 AIN/OD
-Text Notes 15600 2400 0    50   ~ 0
+Text Notes 15225 2400 0    50   ~ 0
 AIN/OD
-Text Notes 15600 2000 0    50   ~ 0
+Text Notes 15225 2000 0    50   ~ 0
 AIN/OD
 Wire Wire Line
 	14875 3750 15025 3750
