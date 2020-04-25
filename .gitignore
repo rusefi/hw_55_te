@@ -6,3 +6,4 @@ _saved*.*
 fp-info-cache
 *-cache.lib
 _autosave*.*
+*.sch-bak
