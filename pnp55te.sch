@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr B 17000 11000
 encoding utf-8
-Sheet 1 1
+Sheet 1 3
 Title "55 pin TE"
 Date "2020-04-25"
 Rev "R0.1"
@@ -198,10 +198,8 @@ Wire Wire Line
 	15425 8550 15525 8550
 Wire Wire Line
 	15425 8450 15525 8450
-Wire Wire Line
-	15425 8350 15525 8350
 Text Label 15525 8450 0    50   ~ 0
-PB9
+J806_PB9
 Text Label 15525 8650 0    50   ~ 0
 PC12_SPI3MOSI
 $Comp
@@ -1060,7 +1058,7 @@ Wire Wire Line
 	14675 7100 15025 7100
 Text Label 14675 5600 2    50   ~ 0
 RESERVED_HI_CUR
-Text Label 2750 3850 0    50   ~ 0
+Text Label 2800 3850 0    50   ~ 0
 RESERVED_HI_CUR
 Wire Wire Line
 	14675 5600 15025 5600
@@ -1097,7 +1095,7 @@ L_LINE
 Wire Wire Line
 	1600 1150 2800 1150
 Text Label 14925 8350 2    50   ~ 0
-PB8
+J803_PB8
 Text Label 14925 8250 2    50   ~ 0
 MRE_5V
 Text Label 15525 8350 0    50   ~ 0
@@ -1532,8 +1530,6 @@ Wire Wire Line
 	9150 7600 9150 7750
 Wire Wire Line
 	9150 7750 9050 7750
-Text Label 9300 7150 0    50   ~ 0
-PB9
 Wire Wire Line
 	9150 7150 9300 7150
 Connection ~ 9150 7150
@@ -1624,7 +1620,6 @@ F 4 "DN P" H 6000 7350 50  0001 C CNN "Notes"
 $EndComp
 Wire Wire Line
 	6000 7350 6150 7350
-NoConn ~ 15425 8250
 NoConn ~ 15025 7750
 NoConn ~ 15025 7850
 NoConn ~ 15025 7950
@@ -1633,16 +1628,12 @@ NoConn ~ 15325 850
 NoConn ~ 15425 850 
 NoConn ~ 15525 850 
 NoConn ~ 2800 1550
-NoConn ~ 14925 8350
-NoConn ~ 15525 8350
 NoConn ~ 14875 1600
 NoConn ~ 14875 4600
 NoConn ~ 14875 4750
 NoConn ~ 8450 7350
 NoConn ~ 8450 7550
 NoConn ~ 8450 6950
-NoConn ~ 2150 5550
-NoConn ~ 2150 3950
 NoConn ~ 2750 2450
 $Comp
 L power:GND #PWR0104
@@ -1836,4 +1827,116 @@ F 3 "" H 1475 9600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Connection ~ 1475 9600
+$Sheet
+S 7100 4150 1000 250 
+U 5EA9703A
+F0 "Low_side_injectors" 50
+F1 "pair.sch" 50
+F2 "IN1" I L 7100 4200 50 
+F3 "IN2" I L 7100 4300 50 
+F4 "OUT1" O R 8100 4200 50 
+F5 "OUT2" O R 8100 4300 50 
+$EndSheet
+$Sheet
+S 7100 4650 1000 250 
+U 5EA9D9B4
+F0 "Low_side_injectors2" 50
+F1 "pair.sch" 50
+F2 "IN1" I L 7100 4700 50 
+F3 "IN2" I L 7100 4800 50 
+F4 "OUT1" O R 8100 4700 50 
+F5 "OUT2" O R 8100 4800 50 
+$EndSheet
+Text Label 2800 5550 0    50   ~ 0
+EXTRA_LOW_SIDE_DRIVE2
+Wire Wire Line
+	2150 5550 2800 5550
+Wire Wire Line
+	2150 3950 2800 3950
+Text Label 2800 3950 0    50   ~ 0
+EXTRA_LOW_SIDE_DRIVE1
+Wire Wire Line
+	2750 3850 2800 3850
+Text Label 8150 4200 0    50   ~ 0
+EXTRA_LOW_SIDE_DRIVE1
+Text Label 8150 4300 0    50   ~ 0
+EXTRA_LOW_SIDE_DRIVE2
+Wire Wire Line
+	8100 4200 8150 4200
+Wire Wire Line
+	8100 4300 8150 4300
+Wire Wire Line
+	7100 4300 7050 4300
+Wire Wire Line
+	7100 4200 7050 4200
+Text Label 7050 4200 2    50   ~ 0
+PA15_SPI3CS
+Text Label 7050 4300 2    50   ~ 0
+J803_PB8
+Wire Wire Line
+	7050 4700 7100 4700
+Wire Wire Line
+	7050 4800 7100 4800
+Text Label 7050 4700 2    50   ~ 0
+J806_PB9
+Text Label 7050 4800 2    50   ~ 0
+PC12_SPI3MOSI
+Text Label 8150 4700 0    50   ~ 0
+EXTRA_LOW_SIDE_DRIVE3
+Text Label 8150 4800 0    50   ~ 0
+EXTRA_LOW_SIDE_DRIVE4
+$Comp
+L Connector_Generic:Conn_01x01 J1
+U 1 1 5EC49E71
+P 9400 4700
+F 0 "J1" H 9480 4696 50  0000 L CNN
+F 1 "Conn_01x01" H 9480 4651 50  0001 L CNN
+F 2 "Connector_PinSocket_2.00mm:PinSocket_1x01_P2.00mm_Vertical" H 9400 4700 50  0001 C CNN
+F 3 "~" H 9400 4700 50  0001 C CNN
+	1    9400 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J2
+U 1 1 5EC4A738
+P 9400 4800
+F 0 "J2" H 9480 4796 50  0000 L CNN
+F 1 "Conn_01x01" H 9480 4751 50  0001 L CNN
+F 2 "Connector_PinSocket_2.00mm:PinSocket_1x01_P2.00mm_Vertical" H 9400 4800 50  0001 C CNN
+F 3 "~" H 9400 4800 50  0001 C CNN
+	1    9400 4800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8100 4700 9200 4700
+Wire Wire Line
+	8100 4800 9200 4800
+Text Label 9300 7150 0    50   ~ 0
+J806_PB9
+$Comp
+L Connector_Generic:Conn_01x01 J7
+U 1 1 5ECF03D2
+P 16050 8250
+F 0 "J7" H 16130 8246 50  0000 L CNN
+F 1 "Conn_01x01" H 16130 8201 50  0001 L CNN
+F 2 "Connector_PinSocket_2.00mm:PinSocket_1x01_P2.00mm_Vertical" H 16050 8250 50  0001 C CNN
+F 3 "~" H 16050 8250 50  0001 C CNN
+	1    16050 8250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J8
+U 1 1 5ECF13E7
+P 16050 8350
+F 0 "J8" H 16130 8346 50  0000 L CNN
+F 1 "Conn_01x01" H 16130 8301 50  0001 L CNN
+F 2 "Connector_PinSocket_2.00mm:PinSocket_1x01_P2.00mm_Vertical" H 16050 8350 50  0001 C CNN
+F 3 "~" H 16050 8350 50  0001 C CNN
+	1    16050 8350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	15425 8250 15850 8250
+Wire Wire Line
+	15425 8350 15850 8350
 $EndSCHEMATC
